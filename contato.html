@@ -2,42 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="style.css">
     <title>Contato</title>
+    <script type="text/javascript" src="contato.js">
+    
+    </script>
 </head>
 <body>
     <div id="header">
         <div id="logo">
-            <p><img src="C:\Users\Bruno'\Documents\GitHub\ac4_Dev\imagens/logo.jpg" alt="logo" width="340px" height="100px"></p>
             <span id="menu">&#9776;</span>
         </div>
         <ul id="nav">
-            <li><a href="#">Cursos</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
             <li><a href="#">Eventos</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </div>
-
-    <section class="a1">
-        <title>Cursos</title>
-        <article>
-
-        </article>
-
-    </section>
-
-    <section class="a2">
-        <title>Cursos</title>
-        <article>
-
-        </article>
-
-    </section>
-
-    <footer>
-        
+    <form method="post" name="formcontato" action="exemplo.php" onsubmit="return validar_form()">
+        <div class="box.form">
+            <h3>Formulário de contato</h3>
+            <label for="nome">
+                <span>Nome</span>
+                <input type="text" class="input_text" name="nome">
+            </label></br>
+            <label for="email">
+                <span>E-mail</span>
+                <input type="text" class="input_text" name="email">
+            </label></br>
+            <label for="assunto">
+                <span>Assunto</span></br>
+                <input type="radio" class="input_text" name="assunto" value="Atendimento" checked>Atendimento</br>
+                <input type="radio" class="input_text" name="assunto" value="Secretaria">Secretaria</br>
+                <input type="radio" class="input_text" name="assunto" value="Financeiro">Financeiro</br>
+                <input type="radio" class="input_text" name="assunto" value="Ouvidoria">Ouvidoria</br>
+            </label></br>
+            <label for="mensagem">
+                <span>Mensagem</span>
+                <input type="text" class="input_text" name="mensagem">
+            </label></br>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+    <button type="text" value="Voltar" href="index.html"></button>
+>>>>>>> cd38459ccefa165195a751e8d262f89cc6bd635b
+    <footer id="footer">
+        <h3>© 2020 IMPACTA Certificação e Treinamento.</h3>
     </footer>
 </body>
 </html>
