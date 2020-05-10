@@ -22,11 +22,13 @@
                 <input type="text" class="input_text" name="email">
             </label></br>
             <label for="assunto">
-                <span>Assunto</span></br>
-                <input type="radio" class="input_text" name="assunto" value="Atendimento" checked>Atendimento</br>
-                <input type="radio" class="input_text" name="assunto" value="Secretaria">Secretaria</br>
-                <input type="radio" class="input_text" name="assunto" value="Financeiro">Financeiro</br>
-                <input type="radio" class="input_text" name="assunto" value="Ouvidoria">Ouvidoria</br>
+                <span>Assunto</span>
+                <select name="assunto" >
+                    <option value="atendimento">Atendimento</option>
+                    <option value="secretaria">Secretaria</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="ouvidoria">Ouvidoria</option>
+                </select>
             </label></br>
             <label for="mensagem">
                 <span>Mensagem</span>
