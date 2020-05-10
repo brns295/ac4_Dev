@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+    <h1>Contato</h1>
+    <script type="text/javascript" src="contato.js">
+    
+    </script>
+</head>
+<body>
+    <form method="post" name="formcontato" action="exemplo.php" onsubmit="return validar_form()">
+        <div class="box.form">
+            <h3>Formulário de contato</h3>
+            <label for="nome">
+                <span>Nome</span>
+                <input type="text" class="input_text" name="nome">
+            </label></br>
+            <label for="email">
+                <span>E-mail</span>
+                <input type="text" class="input_text" name="email">
+            </label></br>
+            <label for="assunto">
+                <span>Assunto</span></br>
+                <input type="radio" class="input_text" name="assunto" value="Atendimento" checked>Atendimento</br>
+                <input type="radio" class="input_text" name="assunto" value="Secretaria">Secretaria</br>
+                <input type="radio" class="input_text" name="assunto" value="Financeiro">Financeiro</br>
+                <input type="radio" class="input_text" name="assunto" value="Ouvidoria">Ouvidoria</br>
+            </label></br>
+            <label for="mensagem">
+                <span>Mensagem</span>
+                <input type="text" class="input_text" name="mensagem">
+            </label></br>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+    <button type="text" value="Voltar" href="index.html"></button>
+</body>
+</html>
