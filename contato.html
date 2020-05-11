@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Contato</title>
     <script type="text/javascript" src="contato.js">
-    
     </script>
 </head>
 <body>
@@ -16,40 +15,37 @@
         <ul id="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </div>
     <form method="post" name="formcontato" action="exemplo.php" onsubmit="return validar_form()">
-        <div class="box.form">
-            <h3>Formulário de contato</h3>
-            <label for="nome">
+        <div id="box_form">
+            <h3 id="tit_form">FORMULÁRIO PARA CONTATO</h3>
+            <label id="nome">
                 <span>Nome</span>
-                <input type="text" class="input_text" name="nome">
+                <input type="text" name="nome">
             </label></br>
-            <label for="email">
+            <label id="email">
                 <span>E-mail</span>
-                <input type="text" class="input_text" name="email">
+                <input type="text" name="email">
             </label></br>
-            <label for="assunto">
+            <label id="assunto">
                 <span>Assunto</span>
-                <select name="assunto" >
+                <select id="textselect" name="assunto" >
                     <option value="atendimento">Atendimento</option>
                     <option value="secretaria">Secretaria</option>
                     <option value="financeiro">Financeiro</option>
                     <option value="ouvidoria">Ouvidoria</option>
                 </select>
             </label></br>
-            <label for="mensagem">
+            <label id="mensagem">
                 <span>Mensagem</span>
-                <input type="text" class="input_text" name="mensagem">
+                <textarea name="mensagem" id="textarea"></textarea>
             </label></br>
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </div>
     </form>
-    <button type="text" value="Voltar" href="index.html"></button>
->>>>>>> cd38459ccefa165195a751e8d262f89cc6bd635b
     <footer id="footer">
         <h3>© 2020 IMPACTA Certificação e Treinamento.</h3>
     </footer>
