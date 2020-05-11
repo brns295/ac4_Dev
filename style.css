@@ -46,20 +46,24 @@
     display: flexbox;
     text-align: center; 
 }
-#img:hover {
+#img_cursos:hover {
     transform: scale(1.1);
 }
+
 #detalhes{
-    text-align: center;
+    position: relative;
+    margin:auto;
+    width: 800px;
 }
 
 #footer{
     text-align: center;
     height: 50px;
     bottom: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     text-align: center;
+    margin-bottom: 0;
 }
 
 label{
@@ -78,6 +82,7 @@ label{
     width:500px;
     position:relative;
     top:50px;
+    padding-bottom: 50px;
 }
 
 *{
@@ -101,4 +106,21 @@ input{
 
 #textarea,#textselect,option{
     color: black;
+}
+
+.container{
+    text-align: center;
+}
+
+iframe{
+    width: 400px;
+    margin: auto;
+}
+:any-link{
+    text-decoration: none;
+}
+
+img{
+    position: relative;
+    margin-bottom: 60px;
 }
