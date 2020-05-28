@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Premiere</title>
+    <script languague="javascript"> 
+        function popup(largura, altura){ window.open('popup.html','popup','width='+largura+',height='+altura+',scrolling=auto,top=0,left=0') }
+      </script> 
 </head>
 <body>
+    <!-- Menu--> 
     <div id="header">
         <div id="logo">
             <span id="menu">&#9776;</span>
@@ -18,12 +22,16 @@
             <li><a href="relatorio.html">Relatório</a></li>
         </ul>
     </div>
-
-    <div class="container">
-        <img src="imagens/propaganda.jpg" alt="propagando" width=500px height=40%>
+    <!-- Seção com escrição do curso--> 
+    <div id="detalhes">
+        <h2><strong>Relatório</strong></h2>
+        
+        <a href="javascript:popup(700,700)"> <img src="imagens/tabela.png" alt=""></teste>
+       
+       
     </div>
+    <footer id="footer">
+        <h3>© 2020 IMPACTA Certificação e Treinamento.</h3>
+    </footer>
 </body>
-<footer id="footer">
-    <h3>© 2020 IMPACTA Certificação e Treinamento.</h3>
-</footer>
 </html>
